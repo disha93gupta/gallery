@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+  .grid-container {
+  box-sizing: border-box;
+  display: grid;
+  gap: 20px;
+  padding: 10px;
+  grid-auto-rows: 250px;
+  /* grid-auto-columns: 150px; */
+  grid-template-columns: repeat(4,1fr);
+  max-height: fit-content;
+  } 
+.grid-container >img{
+  object-fit: cover;
+  height: 100%;
+  width: 100%;
+}
+.item1 {
+grid-column: span 2;
+/* grid-row: 1  / span 2; */
+}
+.item2 {
+grid-row: span 2 ;
+/* grid-row: 1 / span 2; */
+}
+.item6 {
+grid-column:span 2;
+/* grid-row:2; */
+}
+.item7 {
+grid-column:span 2;
+/* grid-row:2 ; */
+}
+    </style>
+</head>
+<body>
+<h1>Gallary</h1>
+<div class="grid-container">
+  <img class="item1 item2" src="https://images.unsplash.com/photo-1667537506424-92ff65808b07?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHw4fHx8ZW58MHx8fHw%3D&auto=format&fit=crop&w=600&q=60" alt="1">
+  <img  src="https://plus.unsplash.com/premium_photo-1661753115934-cdf47487b294?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHwxOXx8fGVufDB8fHx8&auto=format&fit=crop&w=600&q=60" alt="2">
+  <img  src="https://images.unsplash.com/photo-1668620682033-0d5b77ee7506?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHwxOHx8fGVufDB8fHx8&auto=format&fit=crop&w=600&q=60" alt="3">
+  <img  src="https://media.istockphoto.com/id/474058580/photo/abstract-colored-background-with-beautiful-flowers-tulips-and-soft-hues.jpg?b=1&s=170667a&w=0&k=20&c=qHpqGvtWvWUufWX7LDdRz1uRby9cnBE4Cr9qStzoYJE=" alt="4">
+  <img  src="https://images.unsplash.com/photo-1559759708-d6e99b50f0e9?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8M3x8Zmxvd2VyJTIwYmFja2dyb3VuZHxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=600&q=60" alt="5">
+  <img class="item6" src="https://images.unsplash.com/photo-1523528283115-9bf9b1699245?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8OHx8Zmxvd2VyJTIwYmFja2dyb3VuZHxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=600&q=60" alt="6">
+  <img class="item7" src="https://images.unsplash.com/photo-1619922141822-8972ce55b44b?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MjB8fGZsb3dlciUyMGJhY2tncm91bmR8ZW58MHx8MHx8&auto=format&fit=crop&w=600&q=60" alt="7" height="325px">
+</div>
+</body>
+</html>
